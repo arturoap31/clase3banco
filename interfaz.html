@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Productos</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        .container {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Agregar Productos</h1>
+        <label for="productName">Nombre del Producto:</label>
+        <input type="text" id="productName" placeholder="Nombre del producto">
+        <label for="productPrice">Precio:</label>
+        <input type="number" id="productPrice" placeholder="Precio del producto">
+        <button id="addButton">Agregar Producto</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody id="productTableBody">
+                <!-- Las filas de productos se agregarán aquí -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td id="totalPrice">0</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <script src="scriptInterfaz.js"></script>
+</body>
+</html>
